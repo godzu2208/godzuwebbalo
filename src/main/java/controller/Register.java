@@ -57,10 +57,10 @@ public class Register extends HttpServlet {
 		user.setMSSV(mssv);
 		
 		if(userDAO.registerSuccess(user)) {
-			response.sendRedirect("register_success.jsp");
+			response.sendRedirect("register_success.html");
 		}
 		else {
-			response.sendRedirect("failure.jsp");
+			response.sendRedirect("failure.html");
 		}
 		
 	}
